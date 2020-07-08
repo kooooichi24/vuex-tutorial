@@ -1,14 +1,18 @@
 <template>
   <div id="app">
-    hello world
     <p>{{ message }}</p>
+    <EditForm />
   </div>
 </template>
 
 <script>
+import EditForm from '@/components/EditForm';
+
 export default {
   name: 'App',
-  components: {},
+  components: {
+    EditForm,
+  },
   computed: {
     message: function () {
       return this.$store.getters.message;

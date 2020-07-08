@@ -18,7 +18,7 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    doUpdate({ commit }, payload) {
+    doUpdate({ commit }, message) {
       commit('setMessage', { message });
     },
   },
