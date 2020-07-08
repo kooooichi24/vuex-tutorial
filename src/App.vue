@@ -1,13 +1,19 @@
 <template>
   <div id="app">
     hello world
+    <p>{{ message }}</p>
   </div>
 </template>
 
 <script>
 export default {
   name: 'App',
-  components: {}
+  components: {},
+  computed: {
+    message: function () {
+      return this.$store.getters.message;
+    }
+  }
 }
 </script>
 
